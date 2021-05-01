@@ -1,0 +1,32 @@
+#circleRed {
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+  margin: auto;
+  background: red;
+}
+
+#circleYellow {
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+  margin: auto;
+  background: yellow;
+}
+
+#circleHide {
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+  margin: auto;
+  background: white;
+}
+
+thead tr {
+  border: rgba(255, 0, 0, 0);
+}
+
+tbody tr td {
+  border: 8px solid darkblue;
+}
+

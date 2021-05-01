@@ -1,0 +1,13 @@
+
+.black-divider
+{
+    width: 300px;
+    margin: 20px auto;
+    height: 2px;
+    background: black;
+
+}
+
+.spacer{
+  margin: 20px;
+}

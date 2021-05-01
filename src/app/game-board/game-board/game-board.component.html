@@ -1,0 +1,24 @@
+<div class="text-center">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th *ngFor="let button of insertButtons; let index = index">
+          <button  type="button" [class]="button.appearance" id={{index}} [disabled]="button.disabled" (click)="insertPawn(button.id)">
+            <i [class]="button.icon"></i>
+          </button>
+        </th>
+      </tr>
+
+    </thead>
+    <tbody>
+      <tr *ngFor="let rowCol of grid">
+        <td class="text-center" *ngFor="let col of rowCol">
+          <div [id]="col"></div>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-warning btn-center" (click)="resetGame()">Reset your game</button>
+</div>
+

@@ -1,0 +1,13 @@
+<div class="container">
+  <app-header></app-header>
+  <div class="black-divider"></div>
+  <app-config [(nameConfPlayers)]="namePlayers"></app-config>
+  <div class="black-divider"></div>
+  <app-game-info [currentNamePlayer]="namePlayers[turnDefinition]" [colorNamePlayer]="colorPlayers[turnDefinition]"></app-game-info>
+  <app-game-board [currentNamePlayer]="namePlayers[turnDefinition]"
+    [currentPawnPlayer]="pawnPlayers[turnDefinition]" (changeTurn)="changeTurnPLayer()">
+  </app-game-board>
+  <div class="spacer"></div>
+</div>
+
+<!--  -->
